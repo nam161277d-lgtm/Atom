@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社アトム | 岡山県笠岡市</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --accent-color: #ff6600;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-top: 70px;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: var(--accent-color);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #e55b00;
+        }
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 30px;
+            color: var(--primary-color);
+            position: relative;
+        }
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--accent-color);
+            margin: 10px auto 0;
+        }
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 280px;
+        }
+        .access-info {
+            background: var(--secondary-color);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .access-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .access-info th, .access-info td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .access-info th {
+            width: 30%;
+            color: var(--primary-color);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        @media(max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            nav ul { display: none; } /* Có thể bổ sung menu mobile nếu cần */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PHẦN HEADER & MENU -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">株式会社 アトム</div>
+            <nav>
+                <ul>
+                    <li><a href="#top">ホーム</a></li>
+                    <li><a href="#about">会社案内</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PHẦN BANNER CHÍNH -->
+    <section class="hero" id="top">
+        <div>
+            <h1>岡山県笠岡市の「株式会社アトム」</h1>
+            <p>地域社会に貢献し、信頼される企業を目指して。</p>
+            <a href="#contact" class="btn">お問い合わせ</a>
+        </div>
+    </section>
+
+    <!-- PHẦN GIỚI THIỆU (ABOUT) -->
+    <section id="about">
+        <h2>会社概要</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>私たち株式会社アトムは、岡山県笠岡市を拠点に地域密着型のサービスを展開しております。常にお客様のニーズにお応えし、安心・安全・高品質なサービスを提供することをお約束します。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN THÔNG TIN & ĐỊA CHỈ (ACCESS) -->
+    <section id="access">
+        <h2>アクセス・会社情報</h2>
+        <div class="access-info">
+            <table>
+                <tr>
+                    <th>会社名</th>
+                    <td>株式会社 アトム</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>〒714-0045 岡山県笠岡市港町 1-7 (アトム笠岡工場)</td>
+                </tr>
+                <tr>
+                    <th>事業内容</th>
+                    <td>総合製造・関連サービス業</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- PHẦN LIÊN HỆ (CONTACT) -->
+    <section id="contact" style="background: var(--secondary-color);">
+        <h2>お問い合わせ</h2>
+        <p style="text-align: center; margin-bottom: 20px;">求人応募や業務に関するご質問などは、お気軽にお電話またはメールでお問い合わせください。</p>
+        <div style="text-align: center;">
+            <a href="tel:0865634517" class="btn">お電話でのお問い合わせ</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 株式会社アトム (ATOMU Kasaoka Okayama) All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
